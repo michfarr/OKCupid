@@ -38,8 +38,10 @@ OKCupid Matching
   ]
 }
 ```
-#### Value Range
-    importance: 0, 4
+#### Values
+    importance:        [0, 1, 2, 3, 44]
+    IMPORTANCE_POINTS: [0, 1, 10, 50, 250]
+    score:             0, 1
 #### Compare
     For     profile.id as A & profile.otherId as B
     Where   A.questionId    =    B.questionId
@@ -66,4 +68,4 @@ OKCupid Matching
 
     match_score = sqrt( satisfactionA * satisfactionB )
 
-      satisfaction(?A:B) being each user's satisfaction for the other.
+      satisfaction(?:A|B) being each user's satisfaction for the other.
