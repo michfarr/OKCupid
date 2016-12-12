@@ -23,7 +23,7 @@ OKCupid Matching
       matches: [
         {
           profileId: Int,
-          score: 0 > Float > -1
+          score: 1 > Float > 0
         },
         {
           ...profileId
@@ -39,7 +39,7 @@ OKCupid Matching
 }
 ```
 #### Values
-    importance:        [0, 1, 2, 3, 44]
+    importance:        [0, 1, 2, 3, 4]
     IMPORTANCE_POINTS: [0, 1, 10, 50, 250]
     score:             0, 1
 #### Compare
